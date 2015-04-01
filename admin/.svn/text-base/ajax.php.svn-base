@@ -1,0 +1,8 @@
+<?php
+if($_GET['PHPSESSID']) session_id($_GET['PHPSESSID']);
+require_once('core/init.inc.php');
+$presentation = new Presentation();
+$presentation->setMainTpl('main/templates/ajax.tpl');
+$system = new SmartSystem(new Request(), new Response(), $presentation);
+$system->run();
+?>

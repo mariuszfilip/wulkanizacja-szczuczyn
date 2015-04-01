@@ -1,0 +1,105 @@
+#debug {
+	margin-top:10px;
+	margin-bottom:-10px;
+	border: 1px solid #FF3300;
+	padding: 10px;
+	text-align: left;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	color: #626262;
+	background-color:#EDE9E7;
+}
+
+#debug .debug_details {
+	margin-top:9px;
+	margin-bottom:9px;
+}
+
+#debug .debug_details div {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	padding:4px 6px 4px 6px;
+	margin-bottom:5px;
+	border:solid 1px;
+	background:#F8F8F8;
+}
+
+#debug div.debug_show_details{
+	background-color: #F30;
+	margin-left:-10px;
+	margin-right:-10px;
+	margin-top:5px;
+	margin-bottom:-10px;
+	height:16px;
+	color:#FFF;
+	border-top:#FF3300 solid 1px;
+	-moz-border-radius:0 0 4px 4px;
+	-webkit-border-radius:0 0 4px 4px;
+	border-radius:0 0 4px 4px;
+	cursor:pointer;
+	text-align:center;
+}
+
+#debug div.debug_show_details:hover{
+	background-color: #FF0D00;
+}
+
+#debug .debug_details div .sql_error {
+	color:#F33;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;
+	margin-top:5px;
+	margin-left:-6px;
+	margin-right:-6px;
+	margin-bottom:-2px;
+	border:none;
+	border-top:dashed 1px;
+}
+
+#debug .debug_details div .time {
+	display:table-cell;
+	float:right;
+	width:5%;
+	background:#F00;
+	text-align:center;
+}
+
+#debug ul {
+	margin-left:10px;
+}
+
+#debug ol {
+	margin-left:15px;
+}
+
+#debug ul li {
+  list-style-image: none;
+}
+
+
+#debug .ajax_debuger_show{
+	position:absolute;
+	right:10px;
+	margin-top:-10px;
+	margin-right:-3px;
+	text-align:center;
+	background:#FD7E00;
+	width:90px;	
+	border-left: 1px solid #FF3300;
+	border-bottom: 1px solid #FF3300;
+	-moz-border-radius:0 5px 0 5px;
+	-webkit-border-radius:0 5px 0 5px;
+	border-radius:0 5px 0 5px;
+	color: #FFF;
+	cursor:pointer;
+	padding:3px;
+}
+
+#debug .ajax_debuger_show:hover{
+	color:#FFF;
+	cursor:pointer;
+	background-color: #F30;
+}

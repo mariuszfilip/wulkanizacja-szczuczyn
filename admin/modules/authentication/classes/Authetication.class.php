@@ -1,0 +1,91 @@
+<?php
+class Authentication {
+
+  protected $login    = '';
+  protected $password = '';
+
+  private function checkByLoginAndPassword() {
+    $r = array();
+    $DB = DB::getInstance();
+    $sql = 'SELECT `id_operator`,`email`,`name`,`surname`,`super_user` FROM `operator` 
+            WHERE `email`=\''.$this->login.'\' AND `password`=(\''.$this->password.'\') 
+              AND `email`!=\'\' AND `password`!=\'\' AND `active`=\'Y\' AND `deleted`=\'N\'';
+    $stmt = $DB->query($sql,true);
+    if((int)$stmt && $rs = $stmt->fetch(PDO::FETCH_ASSOC))
+    {
+    	$r['id'] = $rs['id_operator'];
+    	$r['id_operator'] = $rs['id_operator'];
+		$r['name'] = $rs['name'];
+		$r['surname'] = $rs['surname'];
+		$r['login'] = $rs['email'];
+		$r['super_user'] = $rs['super_user'];
+		$stmt->closeCursor();
+    }
+	
+	$sql2 = 'SELECT 
+	`operator_module`.`id_module` AS module_id, 
+	`operator_module`.`view` AS view, 
+	`operator_module`.`edit` AS edit, 
+	`operator_module`.`del` AS del, 
+	`module`.`action` AS module
+	FROM `module` LEFT JOIN `operator_module` ON `operator_module`.`id_module` = `module`.`id_module` AND `operator_module`.`id_operator`=\''.$r['id'].'\'
+	WHERE `module`.`protected` =\'Y\';';
+	/*$operator_privilege = new OperatorPrivilege( ( int )$r['id']);
+	$r['permit']['special'] = $operator_privilege->privileges;*/
+	
+    $stmt2 = $DB->query($sql2,true);
+    if((int)$stmt2 && $rs2 = $stmt2->fetchAll(PDO::FETCH_ASSOC)) {
+      //$r['permit']['modules'] = $rs2;
+	  foreach($rs2 as $permission){
+		   $r['permit']['modules'][$permission['module']]['view'] = $permission['view'];
+		   $r['permit']['modules'][$permission['module']]['edit'] = $permission['edit'];
+		   $r['permit']['modules'][$permission['module']]['del'] = $permission['del'];
+	  }
+      $stmt2->closeCursor();
+    }
+	
+    return $r;
+  }
+
+  public function login( $login = '', $password = '' ) {
+    if( $this->validate( $login, $password ) ) {
+      $user = $this->checkByLoginAndPassword();
+      if( ( int )$user[ 'id' ] > 0) {
+        $session = Session::getInstance();
+        $session->setAttribute('user', $user);
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  }
+  
+  protected function validate( $login, $password ) {
+    
+    if( trim( $login ) == '' ) {
+      return false;
+    } elseif ( trim( $login ) != '' ) {
+      $login = strip_tags( trim( $login ) );
+    }
+    
+    if( trim( $password ) == '' ) {
+      return false;
+    } elseif ( trim( $login ) != '' ) {
+      $password = strip_tags( trim( $password ) );
+    }
+    
+    $this -> login = $login;
+    $this -> password = $password;
+    return true;
+  }
+
+  public function logout() {
+    $session = Session::getInstance();
+    $session->unsetAttribute('user');
+	$session->destroy();
+  }
+  
+}
+?>

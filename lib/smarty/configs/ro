@@ -1,0 +1,215 @@
+region							= ''
+ = 'Dodaj'
+submit_save = 'Zapisz'
+
+#personal_info#
+name            = 'Imię'
+surname         = 'Nazwisko'
+postal_address  = 'Adres pocztowy'
+postal_code     = 'Kod pocztowy'
+city            = 'Miasto'
+miejscowosc		= 'Miejscowość'
+country         = 'Kraj'
+address			= 'Adres'
+email           = 'Adres e-mail'
+phone           = 'Telefon'
+mobile_phone    = 'Telefon komórkowy'
+fax_number      = 'Faks'
+date_of_birth   = 'Data urodzenia'
+nationality     = 'Obywatelstwo'
+nationality2    = 'Drugie obywatelstwo'
+gender          = 'Płeć'
+photo           = 'Zdjęcie'
+
+#oferty pracy#
+country   = 'Kraj'
+region    = 'Region'
+from_term = 'Z okresu'
+firma	=	'Firma'
+stanowisko	=	'Stanowisko'
+wymagamy	=	'Wymagamy'
+oferujemy	=	'Oferujemy'
+lokalizacja	=	'Lokalizacja'
+branza	=	'Branża'
+data_waznosci	=	'Data ważnosci ogłoszenia:'
+wszystkie	=	'wszystkie'
+ostatnie_24h = 'ostatnie 24h'
+ostatnie_7	=	'ostatnie 7 dni
+ostatnie_30	=	'ostatnie 30 dni'
+last_offers	=	'Najnowsze oferty pracy'
+kluczowe	=	'Słowo kluczowe'
+data_dodania	=	'Data dodania'
+oferty_pracy_znajdz	=	'Oferty pracy - znajdź ofertę dla siebie'
+data	=	'Data'
+
+
+
+#logowanie#
+log_in	=	'Zaloguj się'
+login_as = 'Jesteś zalogowany jako:'
+ustawienia = 'Edytuj profil'
+logout = 'Wyloguj'
+your_account = 'Przeglądaj konto'
+title_log_success = 'Zalogowany'
+title_log = 'Logowanie'
+label_login = 'login:'
+label_pass = 'hasło:'
+remember_pass = 'przypomnij hasło'
+my_profile = 'Mój profil'
+wypel_zglosz		= 'Wypełnij zgłoszenie'
+
+#profil#
+curriculum_vitae = 'Curriculum Vitae'
+edit_cv_personal_info   = 'Informacje osobiste'
+edit_cv_work_experience = 'Doświadczenie zawodowe'
+edit_cv_education       = 'Wykształcenie i kursy szkoleniowe'
+edit_cv_languages       = 'Język'
+edit_cv_personal_skills = 'Umiejętności i kwalifikacje osobiste'
+edit_cv_driving_license = 'Prawo jazdy'
+edit_cv_aditional_info  = 'Additional information'
+edit_cv_annexes  = 'Annexes'
+district				= 'Województwo'
+description				= 'Opis'
+profil_kandydata		= 'Profil kandydata'
+uzupelnij_zmien_kand	= 'Uzupełnij lub zmień poniższe pola dla Twojego profilu kandydata.'
+for_user 				= 'dla użytkownika'
+konto_uzytkownika		= 'Konto użytkownika'
+przegladaj_konto		= 'przeglądaj konto'
+profil_wystawcy			= 'Profil wystawcy'
+profil_kandydata		= 'Profil kandydata'
+edytuj_profil			= 'edytuj profil'
+zgloszenie_na_targi		= 'zgłoszenie na targi'
+zostan_wystawca			= 'zostań wystawcą'
+zostan_kandydatem		= 'zostań kandydatem'
+edytuj_cv     = 'edytuj_cv'
+edytuj_profil = 'edytuj profil'
+aplikowano    = 'aplikowano'
+edytuj        = 'edytuj'
+usun          = 'usun'
+pobierz       = 'download'
+one_week    = '1 week'
+two_weeks   = '2 weeks'
+four_weeks   = '4 weeks'
+
+#experience#
+experience_position_held = 'Zawód lub zajmowane stanowisko'
+experience_responsibilities = 'Podstawowy zakres prac i obowiązków'
+experience_address_of_employer = 'Nazwa i adres pracodawcy'
+experience_type_of_business = 'Typ działalności lub sektor'
+date_from         = 'As from [yyyy-mm-dd]'
+date_to           = 'To, inclusive [yyyy-mm-dd]'
+
+#sciezka#
+
+path_intro = 'Twoja aktualna pozycja'
+path_start = 'Start'
+clock_date = 'Dziś jest'
+clock_hour = 'godz. '
+
+#top_menu#
+menu_news = 'Aktualności'
+menu_bargain = 'Targi'
+menu_joboffer = 'Oferty pracy'
+menu_lecture = 'Seminaria'
+
+#boksy#
+box_event_title = 'Aktualności'
+box_event_added = 'dodano'
+box_list_more = 'więcej'
+box_joboffer_title = 'Ofery pracy'
+box_joboffer_list_more = 'więcej ofert'
+box_event_list_more = 'więcej aktualności'
+box_joboffer_search_title = 'Szukaj ofert pracy'
+box_joboffer_search_submit = 'szukaj'
+
+
+#aktualnosci#
+event_back = 'lista aktualności'
+
+#footer#
+
+patron_title = 'Patroni medialni'
+
+
+#stronicowanie#
+
+paging_intro = 'Wyswietlane:'
+paging_start = 'do'
+paging_end = 'do'
+paging_of = 'z'
+paging_records = 'pozycji'
+
+
+#targi#
+title_informations = 'Informacje'
+title_how_to_get = 'Jak dojechać'
+title_for_exhibitors = 'Dla wystawców'
+title_for_visitors = 'Dla odwiedzających'
+menu_how_to_get = 'Jak dojechać'
+menu_for_exhibitors = 'Dla wystawców'
+menu_for_visitors = 'Dla odwiedzających'
+date_of_trade = 'Terminy targów'
+actual_date_of_trade = 'Tegoroczne terminy targów'
+menu_exhibitors = 'Wystawcy'
+menu_seminars = 'Seminaria'
+menu_conferences  = 'Konferencje'
+menu_gallery = 'Galeria zdjęć'
+menu_info = 'Informacje o targach'
+menu_pliki = 'Dokumenty do pobrania'
+title_last = 'Najbliższe targi'
+title_registration = 'Rejestracja'
+szczegoly	=	'zobacz szczegóły'
+
+#wystawcy#
+title_exhibitor = 'Wystawcy'
+about	=	'Informacje o'
+
+#galeire#
+
+title_file = 'plik'
+title_del = 'usuń'
+
+#strony#
+
+page_empty = 'Przepraszamy ale takiej strony nie ma.'
+wyswietlanie	=	'Wyświetlane:'
+from	=	'od'
+to	=	'do'
+of	=	'z'
+positions	=	'pozycji'
+back	=	'powrót'
+registered_in	=	'Jesteś zarejestrowany w'
+registation_click	=	'Aby zakończyć proces rejestracji należy kliknąć w poniższy link'
+
+
+#formularz_dodawania_wystawcy_do_targu#
+
+dane_form_firm_title = 'Dane firmy:'
+dane_form_firm_name = 'Nazwa firmy:'
+dane_form_firm_address = 'Adres firmy:'
+dane_form_firm_city = 'Miasto:'
+dane_form_person_title = 'Dane osoby kontaktowej:'
+dane_form_person_name = 'Imię i nazwisko:'
+dane_form_person_phone = 'Telefon:'
+dane_form_person_mphone = 'Telefon kom. :'
+dane_form_person_nip = 'NIP:'
+dane_form_person_email = 'E-mail. :'
+dane_form_person_www = 'Strona www :'
+
+#access_denied#
+access_denied			= 'BRAK DOSTĘPU'
+aby_skorzystac_z		= 'Aby korzystać z'
+profilu					= 'Profilu użytkownika'
+musisz_byc_zalogowany	= 'musisz być zalogowany.'
+
+profesjonalisci	=	'Profesjonaliści dla profesjonalistów'
+najblizsze_terminy	= 'Nearest events:'
+pracy				= 'pracy?'
+umiesc_cv			= 'umieść swoje CV'
+aplikuj				= 'aplikuj on-line'
+szukasz				= 'Szukasz'
+pracownika			= 'pracownika?'
+wez_udzial			= 'weź udział w targach'
+umiesc_oferte		= 'umieść ofertę pracy'
+zmiana_hasla		= 'zmiana hasła'
+platnosci       = 'płatności'

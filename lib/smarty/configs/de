@@ -1,0 +1,152 @@
+region							= ''
+= 'Add'
+
+#logowanie#
+log_in	=	'Log in'
+login_as = 'Loged as:'
+ustawienia = 'Preferences'
+logout = 'Logout'
+your_account = 'Your account'
+
+title_log_success = 'Login'
+title_log = 'Sign in'
+label_login = 'Login'
+label_pass = 'Pass'
+remember_pass = '	I forgot my password'
+my_profile = 'My profile'
+
+#profil#
+curriculum_vitae = 'Curriculum Vitae'
+edit_cv_personal_info   = 'Personal information'
+edit_cv_work_experience = 'Work experience'
+edit_cv_education       = 'Education and training'
+edit_cv_languages       = 'Languages'
+edit_cv_personal_skills = 'Personal skills and competencies'
+edit_cv_driving_license = 'Driving license'
+edit_cv_aditional_info  = 'Additional information'
+edit_cv_annexes  = 'Annexes'
+district				= 'Województwo'
+description				= 'Opis'
+profil_kandydata		= 'Profil kandydata'
+uzupelnij_zmien_kand	= 'Uzupełnij lub zmień poniższe pola dla Twojego profilu kandydata.'
+for_user 				= 'dla użytkownika'
+konto_uzytkownika		= 'Konto użytkownika'
+przegladaj_konto		= 'przeglądaj konto'
+profil_wystawcy			= 'Profil wystawcy'
+profil_kandydata		= 'Profil kandydata'
+edytuj_profil			= 'edytuj profil'
+zgloszenie_na_targi		= 'zgłoszenie na targi'
+zostan_wystawca			= 'zostań wystawcą'
+zostan_kandydatem		= 'zostań kandydatem'
+edytuj_cv     = 'edytuj_cv'
+edytuj_profil = 'edytuj profil'
+aplikowano    = 'aplikowano'
+edytuj        = 'edytuj'
+usun          = 'usun'
+pobierz       = 'download'
+one_week    = '1 week'
+two_weeks   = '2 weeks'
+four_weeks   = '4 weeks'
+
+#oferty pracy#
+country   = 'Kraj'
+region    = 'Region:'
+from_term = 'Z okresu'
+firma	=	'Firma'
+stanowisko	=	'Stanowisko'
+wymagamy	=	'Wymagamy'
+oferujemy	=	'Oferujemy'
+lokalizacja	=	'Lokalizacja'
+branza	=	'Bran�a'
+data_waznosci	=	'Data wa�nosci og�oszenia:'
+
+#experience#
+experience_position_held = 'Zawód lub zajmowane stanowisko'
+experience_responsibilities = 'Podstawowy zakres prac i obowiązków'
+experience_address_of_employer = 'Nazwa i adres pracodawcy'
+experience_type_of_business = 'Typ działalności lub sektor'
+date_from         = 'As from [yyyy-mm-dd]'
+date_to           = 'To, inclusive [yyyy-mm-dd]'
+
+#sciezka#
+
+path_intro = 'You are here'
+path_start = 'Hauptseite'
+clock_date = 'It is today'
+clock_hour = 'hour '
+
+#top_menu#
+
+menu_news = 'Aktuelle'
+menu_bargain = 'Messen'
+menu_joboffer = 'Job offers'
+#menu_lecture = 'Seminaria'
+
+#boksy#
+
+box_event_title = 'Aktuelle'
+box_event_added = 'added'
+box_list_more = 'more'
+box_joboffer_title = 'Job offers'
+box_joboffer_list_more = 'more offers'
+box_joboffer_search_title = 'Search offerws'
+box_joboffer_search_submit = 'search'
+
+
+#aktualnosci#
+event_back = 'back to news list'
+
+#footer#
+
+patron_title = 'Mediumistic sponsors'
+
+#stronicowanie#
+
+paging_intro = 'Displaying:'
+paging_start = ''
+paging_end = 'to'
+paging_of = 'of'
+paging_records = 'items'
+
+#targi#
+title_informations = 'Informationen'
+title_how_to_get = 'How to get'
+title_for_exhibitors = 'For exhibitors'
+title_for_visitors = 'For visitors'
+menu_how_to_get = 'How to get'
+menu_for_exhibitors = 'For exhibitors'
+menu_for_visitors = 'For visitors'
+date_of_trade = 'Dates of trades'
+menu_exhibitors = 'Ausstellern'
+menu_seminars = 'Seminars'
+menu_conferences  = 'Conferences'
+menu_gallery = 'Galerien'
+menu_info = 'Informationen of trades'
+menu_pliki = 'Dokumente to download'
+tile_last = 'Closest trades'
+title_registration = 'Registration'
+
+#wystawcy#
+
+title_exhibitor = 'Ausstellern'
+
+#galeire#
+
+title_file = 'file'
+title_del = 'delete'
+
+#strony#
+
+page_empty = 'Sorry, but this page has gone :D'
+
+profesjonalisci	=	'Profis für Profis'
+najblizsze_terminy	= 'Nächste Messen:'
+pracy				= 'pracy?'
+umiesc_cv			= 'umieść swoje CV'
+aplikuj				= 'aplikuj on-line'
+szukasz				= 'Szukasz'
+pracownika			= 'pracownika?'
+wez_udzial			= 'weź udział w targach'
+umiesc_oferte		= 'umieść ofertę pracy'
+zmiana_hasla		= 'ein neues Paswort'
+platnosci       = 'płatności'

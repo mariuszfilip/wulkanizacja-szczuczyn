@@ -1,0 +1,31 @@
+<h1>{$event_title}</h1>
+
+    {if count($collection.items) > 0}
+
+      {foreach item=i key=k from=$collection.items}
+      <div class="single_news">
+
+          <p style="margin:0;"><a href="news,{$i.id},{modrewrite name=$i.title}.html" style="text-decoration:none;"><span class="inner_text">{$i.title}</span></a></p>
+          <p class="green">{$i.added|date_format:"%e %b %Y, %A"}</p>
+          
+          <div>
+            <p>{if $i.picture}<a href="news,{$i.id},{modrewrite name=$i.title}.html" title="{$i.title}"><img src="thumb.php?dir=files/event/&amp;file={$i.picture|escape:url}&amp;w=86" align="left" alt="{$i.title}" style="margin:0 5px 5px 0;" /></a>{/if}{$i.intro}</p> 
+            
+          </div>
+          
+          <div style="clear:both; padding-top:10px;">
+          <p class="red">
+          <a href="news,{$i.id},{modrewrite name=$i.title}.html">Read more &raquo;</a>
+          </p>
+          </div>
+            
+          <div class="end"></div>
+      </div>
+      {/foreach}
+
+      <div class="stronicowanie">
+        {include file="main/templates/page.tpl" page=$collection.page}
+      </div>        
+    {else}
+      <h2>There is no event.</h2>
+    {/if}

@@ -1,0 +1,32 @@
+ <FilesMatch "\.tpl$">
+	#Order allow,deny
+	#Deny from all
+</FilesMatch>
+
+
+RewriteEngine On
+
+RewriteBase /
+
+# Strona glowna
+RewriteRule ^index\.html$ index.php
+
+#Podstrony
+RewriteRule ^[a-z0-9\-\_]+,([0-9]+)\.html$ ?mod=page&id=$1
+
+#Uslugi
+RewriteRule ^[a-z0-9\-\_]+,service,([0-9]+)\.html$ index.php?mod=catalog&id=$1
+RewriteRule ^[a-z0-9\-\_]+,service,([0-9]+),([0-9]+)\.html$ index.php?mod=catalog&act=service&id=$1&id_service=$2
+
+# Aktualnosci
+RewriteRule ^ogloszenia\.html$ index.php?mod=event
+RewriteRule ^aktualnosci,([0-9]+),[a-z0-9\-\_]+\.html$ index.php?mod=event&ida=$1
+
+# Mapa strony
+#RewriteRule ^map\.html$ index.php?mod=map
+
+# dog
+#RewriteRule ^aktualnosci\.html$ index.php?mod=event
+#RewriteRule ^dog_([0-9]+),[a-z0-9\-\_]+\.html$ index.php?mod=dogs&amp;act=show_dog&amp;id=$1
+RewriteRule ^fachowa_obsluga.html$ ?mod=catalog&act=otherpage&id=11
+RewriteRule ^kontakt\.html$ index.php?mod=user
